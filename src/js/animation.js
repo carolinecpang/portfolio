@@ -19,7 +19,7 @@ const sphere = new THREE.Mesh(
     new THREE.SphereGeometry(5, 30, 30), // Geometry: radius, width-segments, height-segments
     new THREE.MeshPhongMaterial({ // Material reflects light
         // color: 0x41704E,
-        map: new THREE.TextureLoader().load("./assets/Untitled_Artwork.png"), // Wrapping image around sphere
+        map: new THREE.TextureLoader().load("./assets/option1.png"), // Wrapping image around sphere
         normalMap: new THREE.TextureLoader().load("./assets/moon_normal.jpeg") // Adds texture to surface
     })
 );
@@ -89,12 +89,13 @@ function animate() {
 	requestAnimationFrame(animate);
     // Mouse Move animation
     gsap.to(group.rotation, {
-        y: mouseX * 0.001,
-        x: mouseY * 0.001,
+        y: mouseX * 0.002,
+        x: mouseY * 0.002,
         duration: 2
     })
     // Slow rotation
     sphere.rotation.y += 0.002;
+    sphere.rotation.x += 0.001;
 	renderer.render(scene, camera);
 }
 animate();
