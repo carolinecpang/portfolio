@@ -298,7 +298,20 @@ a {
 }
 
 /* Bombardiers */
+.caption {
+    margin-top: 2px;
+    font-size: 14px;
+}
 
+.section-header {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.underline {
+    text-decoration: underline;
+}
 .project-img1 {
     width: 25vw;
     margin-bottom: 10px;
