@@ -5,14 +5,14 @@ b.addEventListener("click", function () {
     window.location = "bombardiers.html"
 })
 
-var scooter = document.getElementById("bombardiers-link")
+var scooter = document.getElementById("scooter-link")
 scooter.addEventListener("click", function () {
-    window.location = "bombardiers.html"
+    window.location = "scooter.html"
 })
 
-var looma = document.getElementById("bombardiers-link")
+var looma = document.getElementById("looma-link")
 looma.addEventListener("click", function () {
-    window.location = "bombardiers.html"
+    window.location = "looma.html"
 })
 
 var extra = document.getElementById("extra-link")

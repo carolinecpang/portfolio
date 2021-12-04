@@ -133,10 +133,16 @@ Up and down arrow keys can be used to navigate through command history.
 const tab = "\u00A0\u00A0\u00A0\u00A0";
 const ls = {
     "index.html": `about${tab}projects${tab}resume`,
+    "about.html": `home${tab}projects${tab}resume`,
     "projects.html": `about${tab}projects${tab}resume
-    bombardiers${tab}foldable-scooter${tab}looma-education`
+    bombardiers${tab}foldable-scooter${tab}looma-education`,
+    "resume.html": `home${tab}about${tab}projects`,
+    "bombardiers.html": `home${tab}about${tab}projects${tab}resume`,
+    "scooter.html": `home${tab}about${tab}projects${tab}resume`,
+    "looma.html": `home${tab}about${tab}projects${tab}resume`
 }
 const cd = {
+    "/~": "index.html",
     "home": "index.html",
     "about": "about.html",
     "projects": "projects.html",

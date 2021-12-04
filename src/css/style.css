@@ -299,6 +299,15 @@ a {
 
 /* Bombardiers */
 
+.project-img1 {
+    width: 25vw;
+    margin-bottom: 10px;
+}
+
+#project-header-right {
+    margin-left: 3vw;
+}
+
 /* ABOUT */
 #about-img {
     width: 27vw;
