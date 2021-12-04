@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/animation.js" type="module"></script>
+    <script defer src="js/main.js" type="module"></script>
+    <script src="js/projects.js" type="module"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caroline Pang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id=header-container-subpage>
+        <div id="header-up">
+            <div id="header-left">
+                <p id="header-name">Caroline Pang</p>
+                <p id="header-description">Electrical and Computer Engineering & Human Computer Interaction Student at Carnegie Mellon University.</p>
+            </div>
+            <div id="header-right">
+                <a class="header-link header-link-glow" href="index.html">Home</a>
+                <a class="header-link header-link-glow" href="about.html">About</a>
+                <a class="header-link header-link-glow" href="projects.html">Projects</a>
+                <a class="header-link header-link-glow" href="resume.html">Resume</a>
+                <div id="menu">
+                    <button id="menu-button">
+                        <img id="menu-image" src="assets/menu.png" alt="menu button">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="header-bottom">
+            <div id="command-history">
+                <template id="prev-command-template">
+                    <div class="prev-command-input">
+                        <span>>></span>
+                        <span class="prev-command-text"></span>
+                    </div>
+                    <div class="prev-command-output">
+                        <span class="prev-command-output-text"></span>
+                    </div>
+                </template>
+            </div>
+            <span>>></span>
+            <input id="command-line" name="command-line" type="text" placeholder="Type --help to see commands" required/>
+        </div>
+    </div>
+    <canvas id="webgl" style="opacity:0%;"></canvas>
+    <div class="page-content">
+        <div class="top-content">
+            <button class="back-home-button" href="index.html">&lt; Back to Home</button>
+            <p class="page-title">Project Gallery</p>
+        </div>
+        <div class="content-container">
+            <div class="right-column">
+                <div class="project">
+                    <button id="scooter-link"><img class="project-image project-image-glow" src="assets/scooter.png" alt="CAD model of folded scooter prototype"></button>
+                    <p class="project-caption">/ Foldable Electric Scooter</p>
+                </div>
+                <div class="project">
+                    <button id="bombardiers-link"><img class="project-image project-image-glow" src="assets/bombardiers-cover.png" alt="Screenshot from Bombardiers gameplay"></button>
+                    <p class="project-caption">/ Bombardiers Game</p>
+                </div>
+            </div>
+            <div class="left-column">
+                <div class="project">
+                    <button id="looma-link"><img class="project-image project-image-glow" src="assets/looma-game.png" alt="Image of Looma matching game interface"></button>
+                    <p class="project-caption">/ Looma Education</p>
+                </div>
+                <div class="project">
+                    <button id="extra-link"><img class="project-image project-image-glow" src="assets/Untitled_Artwork.png" alt="Picture"></button>
+                    <p class="project-caption">/ Extras</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

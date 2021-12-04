@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/animation.js" type="module"></script>
+    <script defer src="js/main.js" type="module"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caroline Pang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="front-content">
+        <p id="front-name">Hi! I'm Caroline Pang.</p>
+        <p id="front-description">I'm currently a Junior at Carnegie Mellon University double-majoring in 
+            Electrical and Computer Engineering and Human Computer Interaction.</p>
+    </div>
+    <div id=header-container>
+        <div id="header-up">
+            <div id="header-left">
+                <p id="header-name">Caroline Pang</p>
+                <p id="header-description">Electrical and Computer Engineering & Human Computer Interaction Student at Carnegie Mellon University.</p>
+            </div>
+            <div id="header-right">
+                <a class="header-link header-link-glow" href="index.html">Home</a>
+                <a class="header-link header-link-glow" href="about.html">About</a>
+                <a class="header-link header-link-glow" href="projects.html">Projects</a>
+                <a class="header-link header-link-glow" href="resume.html">Resume</a>
+                <div id="menu">
+                    <button id="menu-button">
+                        <img id="menu-image" src="assets/menu.png" alt="menu button">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="header-bottom">
+            <div id="command-history">
+                <template id="prev-command-template">
+                    <div class="prev-command-input">
+                        <span>>></span>
+                        <span class="prev-command-text"></span>
+                    </div>
+                    <div class="prev-command-output">
+                        <span class="prev-command-output-text"></span>
+                    </div>
+                </template>
+            </div>
+            <span>>></span>
+            <input id="command-line" name="command-line" type="text" placeholder="Type --help to see commands" required/>
+        </div>
+    </div>
+    <canvas id="webgl"></canvas>
+</body>
+</html>

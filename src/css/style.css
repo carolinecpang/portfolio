@@ -1,0 +1,336 @@
+:root {
+    --font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(180deg, #1d2b3d 0%, #274A63 100%) fixed;
+    font-family: var(--font-family);
+    color: white;
+    font-weight: 300;
+}
+
+button {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#webgl {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    transition: opacity 100ms ease-out;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HEADER */
+
+#header-container {
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    top: 100vh;
+    padding-bottom: 75vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* position: sticky; */
+}
+
+#header-container-subpage {
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    /* padding-bottom: 75vh; */
+    padding-left: 8vw;
+    padding-right: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#header-up {
+    position: sticky;
+    top: 5vh;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#header-left {
+    width: 30vw;
+}
+
+#header-name {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+#header-description {
+    margin: 0;
+    font-size: 14px;
+}
+
+#header-right {
+    margin-left: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-link {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.1s ease-in-out;
+    border-radius: 10px;;
+}
+
+.header-link-glow:hover {
+    background-color: rgb(255, 196, 82, 20%);
+    box-shadow: 0px 0px 15px rgb(255, 196, 82, 50%);
+}
+
+#menu-button {
+    margin:0;
+    padding: 0;
+    padding-left: 14px;
+    padding-right: 15px;
+    padding-top: 11px;
+    padding-bottom: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgb(255, 255, 255, 20%);
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
+#menu-image {
+    width: 30px;
+}
+
+#header-bottom {
+    /* z-index: 98; */
+    width: 40vw;
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: all 0.15s ease-in-out;
+    opacity: 60%;
+}
+
+#header-bottom:hover {
+    opacity: 100%;
+    background: rgb(0, 0, 0, 80%);
+    width: 40vw;
+    /* z-index: 98; */
+    margin-top: 50px;
+    padding: 14px;
+    border-radius: 20px;
+}
+
+#command-line {
+    width: 300px;
+    font-family: var(--font-family);
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: underline;
+    text-decoration-color: rgb(187, 187, 187);
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(187, 187, 187);
+}
+
+/* COMMAND LINE */
+
+
+#command-history {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/* FRONT */
+
+.front-content {
+    position: absolute;
+    z-index: 99;
+    top: 30%
+}
+
+#front-name {
+    /* margin-top: 30vh; */
+    text-align: center;
+    font-size: 48px;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+#front-description {
+    text-align: center;
+    margin-left: 30vw;
+    margin-right: 30vw
+}
+
+
+/* PROJECTS */
+.page-content {
+    position: absolute;
+    z-index: 97;
+}
+
+.top-content {
+    padding-top: 200px;
+    margin-left: 16vw;
+    margin-right: 16vw;
+}
+
+.page-title {
+    position: absolute;
+    top: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center; 
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.content-container {
+    margin: 16vw;
+    margin-top: 4vw;
+    padding: 4vw;
+    border-radius: 20px;
+    background: rgb(255, 255, 255, 20%);
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+
+.right-column {
+    margin-right: 2vw;
+}
+
+.left-column {
+    margin-left: 2vw;
+}
+
+.project-image {
+    cursor: pointer;
+    width: 27vw;
+    aspect-ratio: 1.33;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+.project-image-glow:hover {
+    transform: scale(1.02);
+    background-color: rgb(255, 196, 82, 20%);
+    box-shadow: 0px 0px 15px rgb(255, 196, 82, 50%);
+}
+
+.project-caption {
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: none;
+    margin-bottom: 2vw;
+}
+
+/* PROJECT PAGE */
+
+/* .back-to-projects {
+
+} */
+
+#project-top-content {
+    width: 68vw;
+    padding-top: 200px;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#project-title {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.project-content-container {
+    margin: 16vw;
+    margin-top: 2vw;
+    padding: 4vw;
+    border-radius: 20px;
+    background: rgb(255, 255, 255, 20%);
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+
+/* Bombardiers */
+
+/* ABOUT */
+#about-img {
+    width: 27vw;
+    object-fit: cover;
+}
+
+.about-text {
+    margin-top: 0;
+}
+
+#linkedin {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+/* RESUME */
+
+#resume {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.resume-content-container {
+    width: 68vw;
+    height: 68vw;
+    margin: 16vw;
+    margin-top: 4vw;
+    padding: 4vw;
+    border-radius: 20px;
+    background: rgb(255, 255, 255, 20%);
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+}

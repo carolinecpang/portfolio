@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caropang/portfolio.git"
+  },
+  "author": "Caroline Pang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caropang/portfolio/issues"
+  },
+  "homepage": "https://github.com/caropang/portfolio#readme",
+  "dependencies": {
+    "gsap": "^3.8.0",
+    "three": "^0.135.0"
+  }
+}
