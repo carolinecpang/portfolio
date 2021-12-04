@@ -28,15 +28,6 @@ const group = new THREE.Group()
 group.add(sphere);
 scene.add(group);
 
-const sphere = new THREE.Mesh(
-    new THREE.SphereGeometry(5, 30, 30), // Geometry: radius, width-segments, height-segments
-    new THREE.MeshPhongMaterial({ // Material reflects light
-        // color: 0x41704E,
-        map: new THREE.TextureLoader().load("./assets/option1.png"), // Wrapping image around sphere
-        normalMap: new THREE.TextureLoader().load("./assets/moon_normal.jpeg") // Adds texture to surface
-    })
-);
-
 // Lights
 const ambientLight = new THREE.AmbientLight(0xFFFFFF);
 scene.add(ambientLight);
