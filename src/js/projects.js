@@ -15,7 +15,7 @@ looma.addEventListener("click", function () {
     window.location = "looma.html"
 })
 
-var extra = document.getElementById("extra-link")
-extra.addEventListener("click", function () {
-    window.location = "bombardiers.html"
-})
+// var extra = document.getElementById("extra-link")
+// extra.addEventListener("click", function () {
+//     window.location = "bombardiers.html"
+// })
