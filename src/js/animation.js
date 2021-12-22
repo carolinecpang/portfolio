@@ -4,7 +4,7 @@ import {OrbitControls} from "./OrbitControls.js";
 
 // Basic Scene Setup
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({
     canvas: document.getElementById("webgl"), // Render on canvas
     alpha: true, // Transparent background
@@ -62,16 +62,22 @@ scene.add(stars);
 // const controls = new OrbitControls(camera, renderer.domElement);
 
 // Scrolling Animation
-const startingCamera = 6;
-camera.position.z = startingCamera // Default camera position is in center of coordinate system, so need to move position to view objects
+var t = document.body.getBoundingClientRect().top;
+const startingZ = 6;
+const startingY = 6;
+const scrollScaleZ = 0.012;
+const scrollScaleY = 0.007;
 group.position.z = -5;
+camera.position.z = startingZ + (t * -scrollScaleZ);
+camera.position.y = startingY + (t * scrollScaleY);
 
 function moveCamera() {
-    const t = document.body.getBoundingClientRect().top;
+    t = document.body.getBoundingClientRect().top;
     if (t > 0) {
-        camera.position.z = startingCamera;
+        camera.position.z = startingZ;
     } else if ((-t) < (window.innerHeight*0.9)){
-        camera.position.z = startingCamera + (t * -0.01);
+        camera.position.z = startingZ + (t * -scrollScaleZ);
+        camera.position.y = startingY + (t * scrollScaleY);
     }
 }
 document.body.onscroll = moveCamera;
