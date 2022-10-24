@@ -1,6 +1,6 @@
 # Portfolio
 
-Link to Website: https://caropang.github.io/portfolio/src/index
+Link to Website: https://caropang.github.io/portfolio/src/index.html
 
 
 
